@@ -1,0 +1,833 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Work | Kwesi Designs</title>
+    <meta
+      name="description"
+      content="Visual design, game design, and exploratory creative work by Derrick Scott."
+    />
+  </head>
+
+  <body>
+    <!-- Shared Header -->
+    <header class="topbar" id="top">
+      <div class="container topbarInner">
+        <a class="brand" href="/" aria-label="Home">
+          <div class="brandText">
+            <div class="brandKicker">Kwesi Designs</div>
+            <div class="brandName">Derrick Scott</div>
+          </div>
+        </a>
+
+        <nav class="topnav" aria-label="Primary navigation">
+           <a class="navLink" href="/analytics">Data Analytics</a>
+          <a class="navLink" href="/product">Product & Tech</a>
+          <a class="navLink" href="/creative">Creative</a>
+          <a class="navBtn" href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="padding: 18px 0 58px;">
+      <!-- Page header -->
+      <section class="card sectionCard">
+        <div class="pageLabel">Creative Work</div>
+        <div class="pageHeaderRow">
+          <h1 class="h1" style="margin:0;">Creative Work</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pageIcon" aria-hidden="true"><path d="m14.622 17.897-10.68-2.913"/><path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"/><path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"/></svg>
+        </div>
+        <p class="muted" style="margin:10px 0 0; max-width: 86ch; line-height: 1.6;">
+          Visual design, game development, and exploratory creative projects. Work that spans infographics, Unity builds, photography, film, and branding.
+        </p>
+
+        <div class="actions" style="margin-top: 14px;">
+          <a class="button" href="#game-design">Game Design</a>
+          <a class="button ghost" href="#visual-work">Visual Design</a>
+          <a class="button ghost" href="#exploratory-work">Exploratory</a>
+        </div>
+      </section>
+
+      <!-- Layout: sidenav + content -->
+      <div class="uxLayout" style="margin-top: 14px;">
+
+        <!-- Sidebar -->
+        <aside class="card uxSidenav" aria-label="Jump navigation">
+          <div class="uxSidenavTitle">Jump to</div>
+          <a href="#top">Top</a>
+          <a href="#game-design">Game Design</a>
+          <a href="#visual-work">Visual Design</a>
+          <a href="#exploratory-work">Exploratory Work</a>
+        </aside>
+
+        <!-- Main content -->
+        <div class="uxContent">
+
+          <!-- ===================== GAME DESIGN ===================== -->
+          <section id="game-design" class="card sectionCard anchorPad">
+            <div class="secLabelRow">
+              <div class="secLabel">Academic · Unity</div>
+              <div class="secLabelNote">four builds across Game Design I & II</div>
+            </div>
+            <h2 class="h2" style="margin:0 0 6px;">Game Design</h2>
+            <p class="muted" style="margin:0 0 14px; max-width: 86ch; line-height: 1.6;">
+              Four Unity projects showing my range across 2D and 3D gameplay, level design, and player mechanics. Small-to-medium scope builds focused on core loops, enemy behaviors, and moment-to-moment feel.
+            </p>
+
+            <!-- Cave Slasher -->
+            <div class="project" id="cave-slasher">
+              <div class="meta">
+                <h3 class="title">Cave Slasher</h3>
+                <div class="subtitle">Class: Game Design II</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    For my Game Design II class, I developed a 2D platformer game in Unity. The game includes three levels, enemies, and a boss battle.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">What it shows</div>
+                  <p class="text">
+                    Level pacing, enemy encounters, and a complete boss fight with a clear progression loop.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://kwesi-designs.itch.io/cave-slasher" target="_blank" rel="noreferrer">Play</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/game/cave-slasher-full.webp"
+                  data-lightbox-alt="Cave Slasher preview"
+                  data-lightbox-title="Cave Slasher"
+                  aria-label="View Cave Slasher image"
+                >
+                  <img class="img" src="/assets/game/cave-slasher-preview.webp" alt="Cave Slasher preview" />
+                </button>
+                <p class="muted caption">Cave Slasher gameplay preview.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Tower Ascent -->
+            <div class="project" id="tower-ascent" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Tower Ascent</h3>
+                <div class="subtitle">Class: Game Design I</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    For my Game Design I honors project, I built a Unity first-person shooter with a three-level tower and jumping platforms.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">What it shows</div>
+                  <p class="text">
+                    3D player mechanics, vertical level design, and challenge progression across multiple floors.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://kwesi-designs.itch.io/tower-ascent" target="_blank" rel="noreferrer">Play</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/game/tower-ascent-full.webp"
+                  data-lightbox-alt="Tower Ascent preview"
+                  data-lightbox-title="Tower Ascent"
+                  aria-label="View Tower Ascent image"
+                >
+                  <img class="img" src="/assets/game/tower-ascent-preview.webp" alt="Tower Ascent preview" />
+                </button>
+                <p class="muted caption">Tower Ascent vertical level design preview.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Captain Blaster -->
+            <div class="project" id="captain-blaster" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Captain Blaster</h3>
+                <div class="subtitle">Class: Game Design II</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    This 2D vertical shooter features a jet-piloting player battling alien invaders and dodging jetpack shipmates on Earth.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">What it shows</div>
+                  <p class="text">
+                    Classic shooter pacing, readable threats, and satisfying moment-to-moment feedback.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://kwesi-designs.itch.io/captain-blaster" target="_blank" rel="noreferrer">Play</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/game/blaster-full.png"
+                  data-lightbox-alt="Captain Blaster preview"
+                  data-lightbox-title="Captain Blaster"
+                  aria-label="View Captain Blaster image"
+                >
+                  <img class="img" src="/assets/game/blaster-preview.webp" alt="Captain Blaster preview" />
+                </button>
+                <p class="muted caption">Captain Blaster shooter gameplay preview.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Gauntlet Runner -->
+            <div class="project" id="gauntlet-runner" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Gauntlet Runner</h3>
+                <div class="subtitle">Class: Game Design II</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    I developed a runner game with an animated character, particle effects, and tile animations.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">What it shows</div>
+                  <p class="text">
+                    Character animation, particle systems, and a clean endless-runner style gameplay loop.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://kwesi-designs.itch.io/gauntlet-runner" target="_blank" rel="noreferrer">Play</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/game/runner-full.webp"
+                  data-lightbox-alt="Gauntlet Runner preview"
+                  data-lightbox-title="Gauntlet Runner"
+                  aria-label="View Gauntlet Runner image"
+                >
+                  <img class="img" src="/assets/game/runner-preview.webp" alt="Gauntlet Runner preview" />
+                </button>
+                <p class="muted caption">Gauntlet Runner game preview.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===================== VISUAL DESIGN ===================== -->
+          <section id="visual-work" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Academic · Visual Comm</div>
+              <div class="secLabelNote">turning complex ideas into clear visuals</div>
+            </div>
+            <h2 class="h2" style="margin:0 0 6px;">Visual Design</h2>
+            <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
+              Infographics and visual communication projects focused on turning complex ideas into clear, readable visuals.
+            </p>
+
+            <!-- Interview Infographic -->
+            <div class="project" id="interview-infographic">
+              <div class="meta">
+                <h3 class="title">Interview Infographic</h3>
+                <div class="subtitle">Class: Design Technology</div>
+
+                <div class="block">
+                  <div class="label">Problem</div>
+                  <p class="text">
+                    I needed to visually present insights from an interview with designer Jennifer Boyles for a class final project.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">Solution</div>
+                  <p class="text">
+                    I created an infographic that highlights nine key questions from the interview, simplifying complex information and showcasing my skills in visual communication.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1_0kL-SXpG9U1PTE6Zfea0_4GYoB_fvo8/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/visual/interview-infographic-full.png"
+                  data-lightbox-alt="Interview Infographic preview"
+                  data-lightbox-title="Interview Infographic"
+                  aria-label="View Interview Infographic image"
+                >
+                  <img class="img" src="/assets/visual/interview-infographic-preview.webp" alt="Interview Infographic preview" />
+                </button>
+                <p class="muted caption">Interview infographic preview.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Website Infographic -->
+            <div class="project" id="website-infographic" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Website Infographic</h3>
+                <div class="subtitle">Class: Graphic Design II</div>
+
+                <div class="block">
+                  <div class="label">Problem</div>
+                  <p class="text">
+                    Amateur web designers often lack knowledge of how cognitive psychology impacts web design.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">Solution</div>
+                  <p class="text">
+                    I designed the "Mind and Web Design" infographic to link six cognitive processes (Visual Attention, Memory, Wayfinding, Decision-making, Emotion, Language) to web design, helping new designers build user-friendly sites.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1ki7iX75fAQ-KFGzEPMeFPIKLJkyiLKi1/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/visual/website-infographic-full.png"
+                  data-lightbox-alt="Mind and Web Design infographic preview"
+                  data-lightbox-title="Website Infographic"
+                  aria-label="View Website Infographic image"
+                >
+                  <img class="img" src="/assets/visual/website-infographic-preview.webp" alt="Mind and Web Design infographic preview" />
+                </button>
+                <p class="muted caption">"Mind and Web Design" infographic preview.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===================== EXPLORATORY WORK ===================== -->
+          <section id="exploratory-work" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Personal & freelance</div>
+              <div class="secLabelNote">photography, film, branding, and logo work</div>
+            </div>
+            <h2 class="h2" style="margin:0 0 6px;">Exploratory Work</h2>
+            <p class="muted" style="margin:0 0 14px; max-width: 86ch; line-height: 1.6;">
+              Photography, videography, logo design, and branding. Creative work that sits outside structured deliverables.
+            </p>
+
+            <!-- The A&T Four -->
+            <div class="project" id="at-four">
+              <div class="meta">
+                <h3 class="title">The A&T Four</h3>
+                <div class="subtitle">Photography</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    This series of four upward-angled photos of the Greensboro Four statue at A&T State University uses a low angle to highlight their symbolic power, blending art and history in a striking visual narrative.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1iA0taPp1RWlmQQyJsTfiAbsFjWxhG9lY/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/explore/Aggie-Men-1.png"
+                  data-lightbox-alt="The A&T Four photography series"
+                  data-lightbox-title="The A&T Four"
+                  aria-label="View The A&T Four image"
+                >
+                  <img class="img" src="/assets/explore/Aggie-Men-1.png" alt="The A&T Four photography series" />
+                </button>
+                <p class="muted caption">Upward-angled photography of the Greensboro Four statue.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Concept Film -->
+            <div class="project" id="concept-film" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Concept Film</h3>
+                <div class="subtitle">Freelance</div>
+
+                <div class="block">
+                  <div class="label">Overview</div>
+                  <p class="text">
+                    "Subliminal," a concept film I co-produced and co-directed with Gianna Ragogna, explores the downsides of self-transformation videos. The trailer reflects our creative and technical abilities to gain funding for this compelling story.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1m0GG4tYHoROskqtyGMazCFIfkGY1B517/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="videoWrap" data-youtube-url="https://www.youtube.com/watch?v=_OTIbGtK8NA&embeds_referring_euri=https%3A%2F%2Freadymag.website%2F&embeds_referring_origin=https%3A%2F%2Freadymag.website&source_ve_path=Mjg2NjY">
+                  <iframe
+                    class="videoFrame"
+                    title="Subliminal trailer"
+                    src=""
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="muted caption">Trailer for "Subliminal" concept film.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Personal Logo -->
+            <div class="project" id="personal-logo" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Personal Logo</h3>
+                <div class="subtitle">Class: Graphic Design I</div>
+
+                <div class="block">
+                  <div class="label">Problem</div>
+                  <p class="text">
+                    I needed a personal logo that represents "Kwesi Designs" while reflecting my design ethos.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">Solution</div>
+                  <p class="text">
+                    I created an intertwined 'K' and 'D' logo in Adobe Illustrator, symbolizing harmony in my design process. The circle surrounding the initials adds balance, encapsulating my commitment to aesthetically pleasing and functional designs.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1bK3MZ6RGA6NW91OlO9BIzncKg1w1a5EC/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/explore/personal-logo-1.png"
+                  data-lightbox-alt="Kwesi Designs personal logo"
+                  data-lightbox-title="Personal Logo"
+                  aria-label="View Personal Logo image"
+                >
+                  <img class="img" src="/assets/explore/personal-logo-1.png" alt="Kwesi Designs personal logo" />
+                </button>
+                <p class="muted caption">Intertwined 'K' and 'D' logo design.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Restaurant Brand -->
+            <div class="project" id="restaurant-brand" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">Restaurant Brand</h3>
+                <div class="subtitle">Class: Graphic Design I</div>
+
+                <div class="block">
+                  <div class="label">Problem</div>
+                  <p class="text">
+                    Our team needed to create a unique brand identity for the hypothetical restaurant "Fresh Roll," focused on healthy and affordable sushi.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">Solution</div>
+                  <p class="text">
+                    We created a logo with a sushi roll and seaweed, paired with the restaurant's name in a friendly typeface. It reflects the brand's identity and appeals to urban teens in cities like New York and Los Angeles.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1uYSiodJPw3rSa_eErAXJzUQ4ooNm_qxL/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/explore/restaurant-brand-1.png"
+                  data-lightbox-alt="Fresh Roll restaurant branding"
+                  data-lightbox-title="Restaurant Brand"
+                  aria-label="View Restaurant Brand image"
+                >
+                  <img class="img" src="/assets/explore/restaurant-brand-1.png" alt="Fresh Roll restaurant branding" />
+                </button>
+                <p class="muted caption">Fresh Roll sushi restaurant brand identity.</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- School Club Logo -->
+            <div class="project" id="school-club-logo" style="margin-top: 14px;">
+              <div class="meta">
+                <h3 class="title">School Club Logo</h3>
+                <div class="subtitle">Fuquay-Varina High School</div>
+
+                <div class="block">
+                  <div class="label">Problem</div>
+                  <p class="text">
+                    As a co-founder of the Black Student Union, I needed to create a logo representing our mission of community and support.
+                  </p>
+                </div>
+
+                <div class="block">
+                  <div class="label">Solution</div>
+                  <p class="text">
+                    I designed a logo with an intertwined symbol of unity and strength, paired with bold typography, reflecting our commitment to cultural pride and empowerment on campus.
+                  </p>
+                </div>
+
+                <div class="actions">
+                  <a class="button" href="https://drive.google.com/file/d/1tyulfbi1jm1KSRBoTDSW8jEfuYorFQux/view?usp=sharing" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+
+              <div class="media">
+                <button
+                  class="imgButton"
+                  type="button"
+                  data-lightbox-src="/assets/explore/club-logo-1.png"
+                  data-lightbox-alt="Black Student Union logo"
+                  data-lightbox-title="School Club Logo"
+                  aria-label="View School Club Logo image"
+                >
+                  <img class="img" src="/assets/explore/club-logo-1.png" alt="Black Student Union logo" />
+                </button>
+                <p class="muted caption">Black Student Union logo design.</p>
+              </div>
+            </div>
+          </section>
+
+        </div><!-- /uxContent -->
+      </div><!-- /uxLayout -->
+
+      <!-- Lightbox -->
+      <dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+        <div class="lightboxTop">
+          <div id="lightboxTitle" class="lightboxTitle"></div>
+          <button class="lightboxClose" type="button" aria-label="Close lightbox">Close</button>
+        </div>
+        <img id="lightboxImg" class="lightboxImg" alt="" />
+      </dialog>
+
+      <script>
+        (function(){
+          // YouTube embed resolver
+          function toYouTubeEmbed(url){
+            if (!url) return "";
+            try {
+              const u = new URL(url);
+              const host = u.hostname.replace("www.", "");
+              if (host === "youtu.be") {
+                const id = u.pathname.split("/").filter(Boolean)[0];
+                return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+              }
+              if (host === "youtube.com" || host === "m.youtube.com") {
+                if (u.pathname.startsWith("/watch")) {
+                  const id = u.searchParams.get("v");
+                  return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+                }
+                if (u.pathname.startsWith("/shorts/")) {
+                  const id = u.pathname.split("/shorts/")[1]?.split("/")[0];
+                  return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+                }
+                if (u.pathname.startsWith("/embed/")) {
+                  const id = u.pathname.split("/embed/")[1]?.split("/")[0];
+                  return id ? `https://www.youtube-nocookie.com/embed/${id}` : "";
+                }
+              }
+              return "";
+            } catch {
+              return "";
+            }
+          }
+
+          document.querySelectorAll("[data-youtube-url]").forEach((card) => {
+            const url = card.getAttribute("data-youtube-url") || "";
+            const iframe = card.querySelector("iframe");
+            if (!iframe) return;
+            iframe.src = toYouTubeEmbed(url) || "";
+          });
+
+          // Lightbox
+          const dialog = document.getElementById("lightbox");
+          const img = document.getElementById("lightboxImg");
+          const titleEl = document.getElementById("lightboxTitle");
+          const closeBtn = dialog.querySelector(".lightboxClose");
+
+          function openLightbox(src, alt, title) {
+            img.src = src;
+            img.alt = alt || "";
+            titleEl.textContent = title || "";
+            if (typeof dialog.showModal === "function") {
+              dialog.showModal();
+            } else {
+              window.open(src, "_blank");
+            }
+          }
+
+          function closeLightbox() {
+            if (dialog.open) dialog.close();
+            img.src = "";
+            img.alt = "";
+            titleEl.textContent = "";
+          }
+
+          document.addEventListener("click", (e) => {
+            const btn = e.target.closest("[data-lightbox-src]");
+            if (!btn) return;
+            openLightbox(btn.dataset.lightboxSrc, btn.dataset.lightboxAlt, btn.dataset.lightboxTitle);
+          });
+
+          closeBtn.addEventListener("click", closeLightbox);
+          dialog.addEventListener("click", (e) => { if (e.target === dialog) closeLightbox(); });
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dialog.open) closeLightbox(); });
+        })();
+      </script>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+      <div class="container footerInner">
+        <div class="footerLeft">
+          <div class="footerBrand">Kwesi Designs</div>
+                    <p class="muted footerText">Data Analytics, UX, and systems-minded work.</p>
+          <p class="muted footerText" style="margin-top:10px;">
+            © {new Date().getFullYear()} Derrick Scott · North Carolina, USA
+          </p>
+        </div>
+
+        <div class="footerCols">
+          <div class="footerCol">
+            <div class="footerHead">Work</div>
+              <a class="footerLink" href="/analytics">Data Analytics</a>
+            <a class="footerLink" href="/product">Product & Technical Work</a>
+            <a class="footerLink" href="/creative">Creative Work</a>
+          </div>
+
+          <div class="footerCol">
+            <div class="footerHead">Links</div>
+            <a class="footerLink" href="/#contact">Contact</a>
+            <a class="footerLink" href="https://www.linkedin.com/in/derrick-scott-980109236/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="footerLink" href="https://github.com/derrickscottux-collab" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      .pageLabel {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+        margin-bottom: 10px;
+      }
+
+      .pageHeaderRow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 0 0 10px;
+      }
+
+      .pageIcon {
+        color: var(--accentText);
+        opacity: 0.7;
+        flex-shrink: 0;
+      }
+
+      .secLabelRow {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .secLabel {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+      }
+
+      .secLabelNote {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+
+      .anchorPad { scroll-margin-top: 92px; }
+
+      /* Two-column layout — mirrors product.astro exactly */
+      .uxLayout {
+        display: grid;
+        grid-template-columns: 270px 1fr;
+        gap: 14px;
+        align-items: start;
+      }
+
+      @media (max-width: 980px) {
+        .uxLayout { grid-template-columns: 1fr; }
+      }
+
+      /* Sticky sidebar */
+      .uxSidenav {
+        padding: 14px;
+        position: sticky;
+        top: 86px;
+      }
+
+      @media (max-width: 980px) {
+        .uxSidenav { position: static; }
+      }
+
+      .uxSidenavTitle {
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: var(--text2);
+      }
+
+      .uxSidenav a {
+        display: block;
+        padding: 9px 10px;
+        border-radius: 12px;
+        border: 1px solid var(--border2);
+        background: var(--surface2);
+        text-decoration: none;
+        color: var(--textSoft);
+        margin-bottom: 6px;
+        transition: background .18s ease, transform .18s ease, border-color .18s ease;
+      }
+
+      .uxSidenav a:hover {
+        background: var(--surfaceHover);
+        border-color: var(--border3);
+        transform: translateY(-1px);
+      }
+
+      /* Lightbox */
+      .lightbox {
+        border: 1px solid var(--border3);
+        background: var(--overlayBg);
+        border-radius: 18px;
+        padding: 0;
+        width: min(980px, 92vw);
+      }
+
+      .lightbox::backdrop {
+        background: var(--backdrop);
+      }
+
+      .lightboxTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .lightboxTitle {
+        font-weight: 850;
+        color: var(--text2);
+      }
+
+      .lightboxClose {
+        padding: 9px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border3);
+        background: var(--surface);
+        color: var(--text2);
+        cursor: pointer;
+      }
+
+      .lightboxClose:hover {
+        background: var(--surfaceHover);
+      }
+
+      .lightboxImg {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+      }
+
+      /* Image hover zoom */
+      .imgButton .img {
+        transition: transform .3s ease;
+      }
+
+      .imgButton:hover .img {
+        transform: scale(1.05);
+      }
+
+      /* Video embed */
+      .videoWrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .videoFrame {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+  </body>
+</html>

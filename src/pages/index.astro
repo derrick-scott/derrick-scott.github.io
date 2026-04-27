@@ -10,7 +10,7 @@ import "../styles/global.css";
     <title>Kwesi Designs | Portfolio</title>
     <meta
       name="description"
-      content="Kwesi Designs. UX & technical writing, visual design, game design, and exploratory work."
+      content="Kwesi Designs. Data analytics, UX & technical writing, and creative work by Derrick Scott."
     />
 
     <!-- Small page-only tweaks for the hero layout + headshot crop -->
@@ -150,11 +150,10 @@ import "../styles/global.css";
         </a>
 
         <nav class="topnav" aria-label="Primary navigation">
-          <a class="navLink" href="/ux">UX & Tech Writing</a>
-          <a class="navLink" href="/visual">Visual</a>
-          <a class="navLink" href="/game">Game</a>
-          <a class="navLink" href="/explore">Explore</a>
-          <a class="navBtn" href="#contact">Contact</a>
+          <a class="navLink" href="/analytics">Data Analytics</a>
+          <a class="navLink" href="/product">Product & Tech</a>
+          <a class="navLink" href="/creative">Creative</a>
+          <a class="navBtn" href="/#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -167,26 +166,25 @@ import "../styles/global.css";
             <h1 class="heroTitle">Aesthetic Designs, Purposefully Crafted</h1>
             <p class="muted heroIntro">Hi, I'm Derrick Scott!</p>
 <p class="muted heroText">
-  My primary focus is <strong>API documentation</strong> and developer-facing clarity, with a background in
-  <strong>UX, visual design, and interactive systems</strong> through my
-  <strong>Computer Graphics Technology degree</strong>. Most of my recent work centers on OpenAPI specifications,
-  examples, and evidence-backed behavior, but the UX, visual, and game projects here show how I think about structure,
-  flow, and systems more broadly. If you want the strongest signal,
-  <strong>start with UX &amp; Tech Writing.</strong>
+  I'm currently persuing <strong>data analytics</strong>, combining a foundation in
+  <strong>UX and technical writing</strong> with hands-on work in data wrangling, visualization, and
+  documentation. My <strong>Computer Graphics Technology degree</strong> gave me a systems mindset and
+  an eye for structure that carries directly into how I think about data. If you want the clearest picture
+  of where I'm headed, <strong>start with Data Analytics.</strong>
 </p>
 
             <div class="heroActions">
-              <a class="button" href="/ux">Start with UX & Tech Writing</a>
-              <a class="button ghost" href="#work">Browse categories</a>
+              <a class="button" href="/analytics">Data Analytics</a>
+              <a class="button ghost" href="#work">Browse all work</a>
             </div>
 
             <!-- Pills pinned to the bottom of the left column -->
             <div class="heroMeta" aria-label="Focus areas">
+              <span class="pill">Data Analytics</span>
               <span class="pill">UX</span>
-              <span class="pill">OpenAPI</span>
               <span class="pill">Technical Writing</span>
-              <span class="pill">Visual</span>
-              <span class="pill">Interactive</span>
+              <span class="pill">Python</span>
+              <span class="pill">SQL</span>
             </div>
           </div>
 
@@ -196,7 +194,7 @@ import "../styles/global.css";
                 <div class="dot" aria-hidden="true"></div>
                 <div>
                   <div class="humanTitle">About</div>
-                  <div class="muted humanSub">Multimedia designer focused on clarity and craft.</div>
+                  <div class="muted humanSub">Analyst in training. Designer by background.</div>
                 </div>
               </div>
 
@@ -205,7 +203,7 @@ import "../styles/global.css";
               </div>
 
               <p class="muted humanNotes">
-                North Carolina based. I hold a degree in Computer Graphics Technology with a UX concentration from North Carolina A&T, with a strong focus on design and technical documentation.
+                North Carolina based. Computer Graphics Technology degree with a UX concentration from North Carolina A&T. Now building toward data analytics, where my documentation and systems thinking translate directly.
               </p>
             </div>
           </div>
@@ -264,61 +262,47 @@ import "../styles/global.css";
           <div class="sectionHead">
             <h2 class="h2" style="margin:0;">Work</h2>
             <p class="muted" style="margin:6px 0 0; max-width: 78ch;">
-              Four focused areas. If you only click one, start with UX & Tech Writing.
+              Three areas. If you only click one, start with Data Analytics.
             </p>
           </div>
 
-          <div class="tileGrid">
-            <a class="tile" href="/ux">
+          <div class="tileGrid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+            <a class="tile" href="/analytics">
               <div class="tileTop">
-                <div class="tileTitle">UX & Technical Writing</div>
+                <div class="tileTitle">Data Analytics</div>
                 <div class="tileArrow" aria-hidden="true">→</div>
               </div>
-              <div class="tileDesc">API documentation, UX projects, and QA-style clarity.</div>
+              <div class="tileDesc">Data wrangling, visualization, and analytics projects built on a UX foundation.</div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Viz</span>
+              </div>
+            </a>
+
+            <a class="tile" href="/product">
+              <div class="tileTop">
+                <div class="tileTitle">Product & Technical Work</div>
+                <div class="tileArrow" aria-hidden="true">→</div>
+              </div>
+              <div class="tileDesc">API documentation, UX projects, and technical writing.</div>
               <div class="chips">
                 <span class="chip">OpenAPI</span>
-                <span class="chip">Evidence</span>
-                <span class="chip">DX</span>
                 <span class="chip">UX</span>
+                <span class="chip">Docs</span>
               </div>
             </a>
 
-            <a class="tile" href="/visual">
+            <a class="tile" href="/creative">
               <div class="tileTop">
-                <div class="tileTitle">Visual Design</div>
+                <div class="tileTitle">Creative Work</div>
                 <div class="tileArrow" aria-hidden="true">→</div>
               </div>
-              <div class="tileDesc">Brand, layout, and communication design.</div>
+              <div class="tileDesc">Visual design, game development, and exploratory projects.</div>
               <div class="chips">
+                <span class="chip">Visual</span>
+                <span class="chip">Game Design</span>
                 <span class="chip">Branding</span>
-                <span class="chip">Layout</span>
-                <span class="chip">Typography</span>
-              </div>
-            </a>
-
-            <a class="tile" href="/game">
-              <div class="tileTop">
-                <div class="tileTitle">Game Design</div>
-                <div class="tileArrow" aria-hidden="true">→</div>
-              </div>
-              <div class="tileDesc">Interactive systems, iteration, and play-focused design.</div>
-              <div class="chips">
-                <span class="chip">Systems</span>
-                <span class="chip">Playtests</span>
-                <span class="chip">Iteration</span>
-              </div>
-            </a>
-
-            <a class="tile" href="/explore">
-              <div class="tileTop">
-                <div class="tileTitle">Exploratory Work</div>
-                <div class="tileArrow" aria-hidden="true">→</div>
-              </div>
-              <div class="tileDesc">Studies and experiments outside structured deliverables.</div>
-              <div class="chips">
-                <span class="chip">Studies</span>
-                <span class="chip">Concepts</span>
-                <span class="chip">Practice</span>
               </div>
             </a>
           </div>
@@ -350,9 +334,8 @@ import "../styles/global.css";
       <div class="container footerInner">
         <div class="footerLeft">
           <div class="footerBrand">Kwesi Designs</div>
-          <p class="muted footerText">
-            UX, technical writing, and systems-minded work.
-          </p>
+                    <p class="muted footerText">Data Analytics, UX, and systems-minded work.</p>
+
           <p class="muted footerText" style="margin-top:10px;">
             © <span id="year"></span> Derrick Scott · North Carolina, USA
           </p>
@@ -361,10 +344,9 @@ import "../styles/global.css";
         <div class="footerCols">
           <div class="footerCol">
             <div class="footerHead">Work</div>
-            <a class="footerLink" href="/ux">UX & Tech Writing</a>
-            <a class="footerLink" href="/visual">Visual Design</a>
-            <a class="footerLink" href="/game">Game Design</a>
-            <a class="footerLink" href="/explore">Exploratory</a>
+              <a class="footerLink" href="/analytics">Data Analytics</a>
+            <a class="footerLink" href="/product">Product & Technical Work</a>
+            <a class="footerLink" href="/creative">Creative Work</a>
           </div>
 
           <div class="footerCol">

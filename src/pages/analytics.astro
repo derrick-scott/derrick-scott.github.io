@@ -1,0 +1,595 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analytics | Kwesi Designs</title>
+    <meta
+      name="description"
+      content="Data analytics work and projects by Derrick Scott, including IBM certification projects and applied analytics."
+    />
+  </head>
+
+  <body>
+    <header class="topbar" id="top">
+      <div class="container topbarInner">
+        <a class="brand" href="/" aria-label="Home">
+          <div class="brandText">
+            <div class="brandKicker">Kwesi Designs</div>
+            <div class="brandName">Derrick Scott</div>
+          </div>
+        </a>
+
+        <nav class="topnav" aria-label="Primary navigation">
+          <a class="navLink" href="/analytics">Data Analytics</a>
+          <a class="navLink" href="/product">Product & Tech</a>
+          <a class="navLink" href="/creative">Creative</a>
+          <a class="navBtn" href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="padding: 18px 0 58px;">
+
+      <!-- Page header -->
+      <section class="card sectionCard">
+        <div class="pageLabel">In progress</div>
+        <div class="pageHeaderRow">
+          <h1 class="h1" style="margin: 0;">Data Analytics</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pageIcon" aria-hidden="true"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+        </div>
+        <p class="muted" style="margin: 10px 0 0; max-width: 86ch; line-height: 1.6;">
+          I'm actively transitioning into data analytics, building on a foundation in UX and technical writing.
+          The same instincts that make documentation clear: understanding structure, anticipating the reader,
+          and communicating findings precisely, translate directly into analytics work. This page will grow as
+          projects complete.
+        </p>
+      </section>
+
+      <!-- Certification track -->
+      <section class="card sectionCard daSection" style="margin-top: 14px;">
+        <div class="daLabelRow">
+          <div class="daLabel">In progress</div>
+          <div class="daLabelNote">11-course IBM certification</div>
+        </div>
+        <h2 class="h2" style="margin: 0 0 8px;">IBM Data Analyst Professional Certificate</h2>
+        <p class="muted" style="margin: 0 0 12px; max-width: 86ch; line-height: 1.6;">
+          An 11-course professional certificate covering the full analytics workflow: data collection,
+          wrangling, SQL, Excel, Python, visualization, and storytelling with data. Two capstone projects
+          anchor the certification with real deliverables.
+        </p>
+
+        <div class="daCertRow">
+          <div class="daCertBlock">
+            <div class="daCertStatus">✓ Completed</div>
+            <div class="daCertName">Data Analysis and Visualization Foundations Specialization</div>
+            <div class="daCertMeta">Verified · April 2026 · Coursera / IBM</div>
+            <a class="button ghost" style="margin-top: 10px; display: inline-block;" href="https://www.coursera.org/account/accomplishments/specialization/2APY6PKGTR08" target="_blank" rel="noreferrer">View Certificate ↗</a>
+          </div>
+          <div class="daCertBlock daCertPending">
+            <div class="daCertStatus">◌ In progress</div>
+            <div class="daCertName">IBM Data Analyst Professional Certificate</div>
+            <div class="daCertMeta">Full 11-course track · completing now</div>
+          </div>
+        </div>
+
+        <div class="daSkillGrid">
+          <div class="daSkillBlock">
+            <div class="daSkillHead">Languages & Tools</div>
+            <div class="chips" style="margin-top: 8px;">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Excel</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+            </div>
+          </div>
+          <div class="daSkillBlock">
+            <div class="daSkillHead">Visualization</div>
+            <div class="chips" style="margin-top: 8px;">
+              <span class="chip">Plotly</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">IBM Cognos</span>
+              <span class="chip">Google Looker Studio</span>
+            </div>
+          </div>
+          <div class="daSkillBlock">
+            <div class="daSkillHead">Methods</div>
+            <div class="chips" style="margin-top: 8px;">
+              <span class="chip">Data Wrangling</span>
+              <span class="chip">ETL</span>
+              <span class="chip">Statistical Analysis</span>
+              <span class="chip">Web Scraping</span>
+              <span class="chip">API Access</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects in progress -->
+      <section class="card sectionCard daSection" style="margin-top: 14px;">
+        <div class="daLabelRow">
+          <div class="daLabel">Projects</div>
+          <div class="daLabelNote">Completing as part of the IBM certification</div>
+        </div>
+        <h2 class="h2" style="margin: 0 0 8px;">Work in Progress</h2>
+        <p class="muted" style="margin: 0 0 20px; max-width: 86ch; line-height: 1.6;">
+          These are the projects I'm currently working through. Each one will be documented here
+          with findings, code, and visualizations once complete.
+        </p>
+
+        <!-- Project 1: Stock Dashboard -->
+        <div class="daProjectCard" id="stock-dashboard">
+          <div class="daProjectLeft">
+            <div class="daProjectBadge">IBM Certification Project</div>
+            <h3 class="daProjectTitle">Stock Analytics Dashboard</h3>
+            <p class="daProjectSub">Python · Plotly · Web Scraping · Financial Data</p>
+
+            <div class="block" style="margin-top: 14px;">
+              <div class="label">Role</div>
+              <p class="text">
+                Acting as a data analyst for a startup investment firm, helping clients make informed
+                decisions about stock investments.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Scope</div>
+              <p class="text">
+                Extract historical stock prices and quarterly revenue data for Tesla, Amazon, AMD, and
+                GameStop using Python libraries and web scraping. Build an interactive Plotly dashboard
+                to surface patterns and trends for investment decision-making.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Deliverable</div>
+              <p class="text">
+                A structured dashboard with visualizations identifying key price and revenue trends across
+                all four stocks.
+              </p>
+            </div>
+
+            <div class="daProjectStatus">
+              <div class="daStatusDot"></div>
+              <span>In progress</span>
+            </div>
+          </div>
+
+          <div class="daProjectRight">
+            <div class="daStockGrid">
+              <div class="daStockChip">TSLA</div>
+              <div class="daStockChip">AMZN</div>
+              <div class="daStockChip">AMD</div>
+              <div class="daStockChip">GME</div>
+            </div>
+            <div class="daProjectMethods">
+              <div class="daMethodHead">Methods used</div>
+              <ul class="daMethodList">
+                <li>Python (requests, BeautifulSoup)</li>
+                <li>Historical price extraction</li>
+                <li>Revenue scraping</li>
+                <li>Plotly interactive charts</li>
+                <li>Dashboard layout & storytelling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider" style="margin: 20px 0;"></div>
+
+        <!-- Project 2: Capstone -->
+        <div class="daProjectCard" id="skills-capstone">
+          <div class="daProjectLeft">
+            <div class="daProjectBadge">IBM Capstone Project</div>
+            <h3 class="daProjectTitle">Global Developer Skills Analysis</h3>
+            <p class="daProjectSub">Python · SQL · IBM Cognos · Stack Overflow Survey · ETL</p>
+
+            <div class="block" style="margin-top: 14px;">
+              <div class="label">Role</div>
+              <p class="text">
+                Data analyst at a global IT and business consulting firm, contributing to an annual report
+                on in-demand technology skills.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Scope</div>
+              <p class="text">
+                Collect data from job postings, training portals, and the Stack Overflow Developer Survey.
+                Identify which programming languages, database technologies, and IDEs are most in demand.
+                Apply data wrangling and statistical analysis, then build a dashboard in IBM Cognos Analytics.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Deliverable</div>
+              <p class="text">
+                A full analysis pipeline from raw data to a polished IBM Cognos dashboard, presented
+                as a stakeholder-facing report with data storytelling.
+              </p>
+            </div>
+
+            <div class="daProjectStatus">
+              <div class="daStatusDot"></div>
+              <span>In progress</span>
+            </div>
+          </div>
+
+          <div class="daProjectRight">
+            <div class="daProjectMethods">
+              <div class="daMethodHead">Data sources</div>
+              <ul class="daMethodList">
+                <li>Stack Overflow Developer Survey</li>
+                <li>Job posting scraping</li>
+                <li>Training portal APIs</li>
+                <li>.csv, Excel, and database formats</li>
+              </ul>
+            </div>
+            <div class="daProjectMethods" style="margin-top: 14px;">
+              <div class="daMethodHead">Analysis questions</div>
+              <ul class="daMethodList">
+                <li>Most in-demand programming languages</li>
+                <li>Top database technologies</li>
+                <li>Most popular IDEs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future projects placeholder -->
+      <section class="card sectionCard daSection" style="margin-top: 14px;">
+        <div class="daLabelRow">
+          <div class="daLabel">Planned</div>
+          <div class="daLabelNote">Scoping now, details added as they develop</div>
+        </div>
+        <h2 class="h2" style="margin: 0 0 8px;">Upcoming Projects</h2>
+        <p class="muted" style="margin: 0 0 20px; max-width: 86ch; line-height: 1.6;">
+          Projects I'm scoping now. Details and deliverables will be added as they take shape.
+        </p>
+
+        <div class="daPlannedGrid">
+          <div class="daPlannedCard">
+            <div class="daPlannedIcon">🎮</div>
+            <h3 class="daPlannedTitle">Mobile Game Analytics</h3>
+            <p class="muted" style="margin: 8px 0 0; font-size: 14px; line-height: 1.55;">
+              Co-developing a mobile game with my brother. Planning to instrument player behavior,
+              track session data, and analyze engagement and retention patterns as the game develops.
+            </p>
+            <div class="chips" style="margin-top: 12px;">
+              <span class="chip">UX Analytics</span>
+              <span class="chip">Game Metrics</span>
+              <span class="chip">Retention</span>
+            </div>
+          </div>
+
+          <div class="daPlannedCard">
+            <div class="daPlannedIcon">📊</div>
+            <h3 class="daPlannedTitle">UX & Product Analytics</h3>
+            <p class="muted" style="margin: 8px 0 0; font-size: 14px; line-height: 1.55;">
+              Applying analytics to UX research questions. Bridging my documentation and design
+              background with data-driven product insights.
+            </p>
+            <div class="chips" style="margin-top: 12px;">
+              <span class="chip">Product Analytics</span>
+              <span class="chip">User Behavior</span>
+              <span class="chip">Funnel Analysis</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Background connection -->
+      <section class="card sectionCard daSection" style="margin-top: 14px;">
+        <div class="daLabelRow">
+          <div class="daLabel">Context</div>
+          <div class="daLabelNote">Background in UX & technical writing</div>
+        </div>
+        <h2 class="h2" style="margin: 0 0 8px;">Why Analytics</h2>
+        <p class="muted" style="margin: 0; max-width: 86ch; line-height: 1.6;">
+          My background in UX and technical writing is more of a head start than a detour. Good documentation
+          requires understanding a system deeply, identifying what matters, and communicating it without noise.
+          Good analytics work requires the same thing. The tools are different. The thinking is not.
+          My Computer Graphics Technology degree gave me a foundation in structured thinking and systems design
+          that maps directly to how I approach data problems now.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div class="footerLeft">
+          <div class="footerBrand">Kwesi Designs</div>
+          <p class="muted footerText">Data Analytics, UX, and systems-minded work.</p>
+          <p class="muted footerText" style="margin-top:10px;">
+            © {new Date().getFullYear()} Derrick Scott · North Carolina, USA
+          </p>
+        </div>
+
+        <div class="footerCols">
+          <div class="footerCol">
+            <div class="footerHead">Work</div>
+            <a class="footerLink" href="/analytics">Data Analytics</a>
+            <a class="footerLink" href="/product">Product & Technical Work</a>
+            <a class="footerLink" href="/creative">Creative Work</a>
+          </div>
+
+          <div class="footerCol">
+            <div class="footerHead">Links</div>
+            <a class="footerLink" href="/#contact">Contact</a>
+            <a class="footerLink" href="https://www.linkedin.com/in/derrick-scott-980109236/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="footerLink" href="https://github.com/derrickscottux-collab" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      /* Page label — shared pattern across all pages */
+      .pageLabel {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+        margin-bottom: 10px;
+      }
+
+      .pageHeaderRow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 0 0 10px;
+      }
+
+      .pageIcon {
+        color: var(--accentText);
+        opacity: 0.7;
+        flex-shrink: 0;
+      }
+
+      /* Section label row */
+      .daLabelRow {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .daLabel {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+      }
+
+      .daLabelNote {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+
+      /* Cert progress row */
+      .daCertRow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 720px) {
+        .daCertRow { grid-template-columns: 1fr; }
+      }
+
+      .daCertBlock {
+        border: 1px solid var(--accentBorder);
+        background: var(--accentBg);
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      .daCertPending {
+        border-color: var(--border);
+        background: var(--surface2);
+        opacity: 0.7;
+      }
+
+      .daCertStatus {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--accentText);
+        margin-bottom: 6px;
+      }
+
+      .daCertPending .daCertStatus {
+        color: var(--muted2);
+      }
+
+      .daCertName {
+        font-size: 15px;
+        font-weight: 750;
+        color: var(--text2);
+        line-height: 1.4;
+        margin-bottom: 4px;
+      }
+
+      .daCertMeta {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .daSkillGrid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      @media (max-width: 860px) {
+        .daSkillGrid { grid-template-columns: 1fr; }
+      }
+
+      .daSkillBlock {
+        border: 1px solid var(--border);
+        background: var(--surface2);
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      .daSkillHead {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        color: var(--muted2);
+      }
+
+      /* Project cards */
+      .daProjectCard {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 20px;
+        align-items: start;
+      }
+
+      @media (max-width: 860px) {
+        .daProjectCard { grid-template-columns: 1fr; }
+      }
+
+      .daProjectBadge {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--surface2);
+        color: var(--muted);
+        border: 1px solid var(--border3);
+        margin-bottom: 10px;
+      }
+
+      .daProjectTitle {
+        margin: 0 0 4px;
+        font-size: 20px;
+        font-weight: 850;
+        letter-spacing: .1px;
+        color: var(--text2);
+      }
+
+      .daProjectSub {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .daProjectStatus {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .daStatusDot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--accentText);
+        box-shadow: 0 0 0 3px var(--accentBg);
+        animation: pulse 2s ease infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.45; }
+      }
+
+      /* Right panel of project cards */
+      .daProjectRight {
+        border: 1px solid var(--border);
+        background: var(--surface2);
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      /* Stock ticker chips */
+      .daStockGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      .daStockChip {
+        border: 1px solid var(--accentBorder);
+        background: var(--accentBg);
+        color: var(--accentText);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: .06em;
+      }
+
+      /* Methods list */
+      .daMethodHead {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--muted2);
+        margin-bottom: 8px;
+      }
+
+      .daMethodList {
+        margin: 0;
+        padding: 0 0 0 16px;
+        color: var(--textSoft);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      /* Planned projects grid */
+      .daPlannedGrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      @media (max-width: 720px) {
+        .daPlannedGrid { grid-template-columns: 1fr; }
+      }
+
+      .daPlannedCard {
+        border: 1px solid var(--border);
+        background: var(--surface2);
+        border-radius: 14px;
+        padding: 16px;
+      }
+
+      .daPlannedIcon {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .daPlannedTitle {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 850;
+        color: var(--text2);
+      }
+    </style>
+  </body>
+</html>

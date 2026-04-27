@@ -26,10 +26,9 @@ import "../styles/global.css";
         </a>
 
         <nav class="topnav" aria-label="Primary navigation">
-          <a class="navLink" href="/ux">UX & Tech Writing</a>
-          <a class="navLink" href="/visual">Visual</a>
-          <a class="navLink" href="/game">Game</a>
-          <a class="navLink" href="/explore">Explore</a>
+          <a class="navLink" href="/analytics">Data Analytics</a>
+          <a class="navLink" href="/product">Product & Tech</a>
+          <a class="navLink" href="/creative">Creative</a>
           <a class="navBtn" href="/#contact">Contact</a>
         </nav>
       </div>
@@ -38,8 +37,12 @@ import "../styles/global.css";
     <main class="container" style="padding: 18px 0 58px;">
       <!-- Page header -->
       <section class="card sectionCard">
-        <h1 class="h1" style="margin:0 0 10px;">UX & Technical Writing</h1>
-        <p class="muted" style="margin:0; max-width: 86ch; line-height: 1.6;">
+        <div class="pageLabel">Product & Tech</div>
+        <div class="pageHeaderRow">
+          <h1 class="h1" style="margin:0;">Product & Technical Work</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pageIcon" aria-hidden="true"><path d="M12 22V12"/><path d="M20.27 18.27 22 20"/><path d="M21 10.498V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l.98-.559"/><path d="M3.29 7 12 12l8.71-5"/><path d="m7.5 4.27 8.997 5.148"/><circle cx="18.5" cy="16.5" r="2.5"/></svg>
+        </div>
+        <p class="muted" style="margin:10px 0 0; max-width: 86ch; line-height: 1.6;">
           I focus on API documentation and developer-facing clarity. The UX and QA work below shows how I think about structure,
           navigation, edge cases, and expected behavior.
         </p>
@@ -68,6 +71,10 @@ import "../styles/global.css";
         <div class="uxContent">
           <!-- API Docs -->
           <section id="api-docs" class="card sectionCard anchorPad">
+            <div class="secLabelRow">
+              <div class="secLabel">Self-directed</div>
+              <div class="secLabelNote">portfolio work built outside of class</div>
+            </div>
             <h2 class="h2" style="margin:0 0 6px;">API Documentation</h2>
             <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
               Documentation work that prioritizes clarity and testability.
@@ -118,6 +125,10 @@ import "../styles/global.css";
 
           <!-- Open Source -->
           <section id="open-source-docs" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Open source</div>
+              <div class="secLabelNote">PRs submitted to real public repos</div>
+            </div>
             <h2 class="h2" style="margin:0 0 6px;">Open Source Documentation Contributions</h2>
             <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
               Contributions to existing projects focused on parameter clarity and edge cases.
@@ -172,8 +183,11 @@ import "../styles/global.css";
             </div>
           </section>
 
-          <!-- UX Projects -->
           <section id="ux-projects" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Academic · NC A&T</div>
+              <div class="secLabelNote">interface design & information architecture coursework</div>
+            </div>
             <h2 class="h2" style="margin:0 0 6px;">UX Projects</h2>
             <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
               Interface design work exploring navigation and information architecture.
@@ -366,8 +380,11 @@ import "../styles/global.css";
   
           </section>
 
-          <!-- QA -->
           <section id="qa-testing" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Freelance</div>
+              <div class="secLabelNote">game QA with bug logging in JIRA</div>
+            </div>
             <h2 class="h2" style="margin:0 0 6px;">QA & Testing</h2>
             <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
               Testing work focused on reproduction steps and edge case identification.
@@ -407,8 +424,11 @@ import "../styles/global.css";
             </div>
           </section>
 
-          <!-- Visual -->
           <section id="visual-work" class="card sectionCard anchorPad" style="margin-top: 14px;">
+            <div class="secLabelRow">
+              <div class="secLabel">Academic · Web Design II</div>
+              <div class="secLabelNote">layout and visual hierarchy focused</div>
+            </div>
             <h2 class="h2" style="margin:0 0 6px;">Visual / Communication Work</h2>
             <p class="muted" style="margin:0 0 14px; max-width: 86ch;">
               Visual design work exploring layout and information hierarchy.
@@ -511,10 +531,9 @@ import "../styles/global.css";
         <div class="footerCols">
           <div class="footerCol">
             <div class="footerHead">Work</div>
-            <a class="footerLink" href="/ux">UX & Tech Writing</a>
-            <a class="footerLink" href="/visual">Visual Design</a>
-            <a class="footerLink" href="/game">Game Design</a>
-            <a class="footerLink" href="/explore">Exploratory</a>
+              <a class="footerLink" href="/analytics">Data Analytics</a>
+            <a class="footerLink" href="/product">Product & Technical Work</a>
+            <a class="footerLink" href="/creative">Creative Work</a>
           </div>
 
           <div class="footerCol">
@@ -528,7 +547,51 @@ import "../styles/global.css";
     </footer>
 
     <!-- Page-only CSS to stabilize layout without fighting global.css -->
-    <style>      .anchorPad{ scroll-margin-top: 92px; }
+    <style>
+      .pageLabel {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+        margin-bottom: 10px;
+      }
+
+      .pageHeaderRow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 0 0 10px;
+      }
+
+      .pageIcon {
+        color: var(--accentText);
+        opacity: 0.7;
+        flex-shrink: 0;
+      }
+
+      .secLabelRow {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .secLabel {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accentText);
+      }
+
+      .secLabelNote {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+
+      .anchorPad{ scroll-margin-top: 92px; }
 
       .uxLayout{
         display: grid;
