@@ -777,7 +777,7 @@ code {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted2);
+  color: var(--muted);
   margin-bottom: 6px;
 }
 
