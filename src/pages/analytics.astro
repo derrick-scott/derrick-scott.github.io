@@ -168,20 +168,6 @@ import "../styles/global.css";
               </p>
             </div>
 
-            <div class="block">
-              <div class="label">Interactive: Normalized Performance</div>
-              <div class="chartFrame">
-                <iframe src="/charts/01_normalized_performance.html" title="Normalized stock performance vs S&P 500" loading="lazy"></iframe>
-              </div>
-            </div>
-
-            <div class="block">
-              <div class="label">Interactive: Correlation Heatmap</div>
-              <div class="chartFrame">
-                <iframe src="/charts/04_correlation_heatmap.html" title="Correlation heatmap of daily returns" loading="lazy"></iframe>
-              </div>
-            </div>
-
             <div class="daProjectStatus">
               <div class="daStatusDot daStatusDone"></div>
               <span>Completed</span>
@@ -208,6 +194,20 @@ import "../styles/global.css";
               </ul>
             </div>
             <a class="button ghost" style="margin-top: 14px; display: inline-block; width: 100%; text-align: center;" href="https://github.com/derrickscottux-collab/stock-analytics-pipeline" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="block daChartsFull">
+          <div class="label">Interactive: Normalized Performance</div>
+          <div class="chartFrame">
+            <iframe src="/charts/01_normalized_performance.html" title="Normalized stock performance vs S&P 500" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="block daChartsFull">
+          <div class="label">Interactive: Correlation Heatmap</div>
+          <div class="chartFrame">
+            <iframe src="/charts/04_correlation_heatmap.html" title="Correlation heatmap of daily returns" loading="lazy"></iframe>
           </div>
         </div>
 
@@ -259,12 +259,30 @@ import "../styles/global.css";
 
             <div class="block">
               <div class="label">Dashboard: Current Technology Usage</div>
-              <img class="img" src="/images/current_tech_usage.png" alt="IBM Cognos dashboard showing current technology usage across programming languages, databases, cloud platforms, and web frameworks" />
+              <button
+                class="imgButton"
+                type="button"
+                data-lightbox-src="/images/current_tech_usage.png"
+                data-lightbox-alt="IBM Cognos dashboard showing current technology usage across programming languages, databases, cloud platforms, and web frameworks"
+                data-lightbox-title="Current Technology Usage"
+                aria-label="View Current Technology Usage dashboard image"
+              >
+                <img class="img" src="/images/current_tech_usage.png" alt="IBM Cognos dashboard showing current technology usage across programming languages, databases, cloud platforms, and web frameworks" />
+              </button>
             </div>
 
             <div class="block">
               <div class="label">Dashboard: Future Technology Trends</div>
-              <img class="img" src="/images/future_tech_trend.png" alt="IBM Cognos dashboard showing future desired technology adoption across programming languages, databases, cloud platforms, and web frameworks" />
+              <button
+                class="imgButton"
+                type="button"
+                data-lightbox-src="/images/future_tech_trend.png"
+                data-lightbox-alt="IBM Cognos dashboard showing future desired technology adoption across programming languages, databases, cloud platforms, and web frameworks"
+                data-lightbox-title="Future Technology Trends"
+                aria-label="View Future Technology Trends dashboard image"
+              >
+                <img class="img" src="/images/future_tech_trend.png" alt="IBM Cognos dashboard showing future desired technology adoption across programming languages, databases, cloud platforms, and web frameworks" />
+              </button>
             </div>
 
             <div class="daProjectStatus">
@@ -352,6 +370,52 @@ import "../styles/global.css";
           that maps directly to how I approach data problems now.
         </p>
       </section>
+
+      <!-- Lightbox -->
+      <dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+        <div class="lightboxTop">
+          <div id="lightboxTitle" class="lightboxTitle"></div>
+          <button class="lightboxClose" type="button" aria-label="Close lightbox">Close</button>
+        </div>
+        <img id="lightboxImg" class="lightboxImg" alt="" />
+      </dialog>
+
+      <script>
+        (function(){
+          const dialog = document.getElementById("lightbox");
+          const img = document.getElementById("lightboxImg");
+          const titleEl = document.getElementById("lightboxTitle");
+          const closeBtn = dialog.querySelector(".lightboxClose");
+
+          function openLightbox(src, alt, title) {
+            img.src = src;
+            img.alt = alt || "";
+            titleEl.textContent = title || "";
+            if (typeof dialog.showModal === "function") {
+              dialog.showModal();
+            } else {
+              window.open(src, "_blank");
+            }
+          }
+
+          function closeLightbox() {
+            if (dialog.open) dialog.close();
+            img.src = "";
+            img.alt = "";
+            titleEl.textContent = "";
+          }
+
+          document.addEventListener("click", (e) => {
+            const btn = e.target.closest("[data-lightbox-src]");
+            if (!btn) return;
+            openLightbox(btn.dataset.lightboxSrc, btn.dataset.lightboxAlt, btn.dataset.lightboxTitle);
+          });
+
+          closeBtn.addEventListener("click", closeLightbox);
+          dialog.addEventListener("click", (e) => { if (e.target === dialog) closeLightbox(); });
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dialog.open) closeLightbox(); });
+        })();
+      </script>
 
     </main>
 
@@ -621,6 +685,10 @@ import "../styles/global.css";
       }
 
       /* Embedded interactive Plotly charts */
+      .daChartsFull {
+        margin-top: 16px;
+      }
+
       .chartFrame {
         border: 1px solid var(--border);
         border-radius: 14px;
@@ -631,13 +699,19 @@ import "../styles/global.css";
       .chartFrame iframe {
         display: block;
         width: 100%;
-        height: 420px;
+        height: 620px;
         border: 0;
       }
 
-      @media (max-width: 720px) {
+      @media (max-width: 860px) {
         .chartFrame iframe {
-          height: 320px;
+          height: 460px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .chartFrame iframe {
+          height: 360px;
         }
       }
 
@@ -669,6 +743,74 @@ import "../styles/global.css";
         font-size: 17px;
         font-weight: 850;
         color: var(--text2);
+      }
+
+      /* Lightbox */
+      .lightbox {
+        border: 1px solid var(--border3);
+        background: var(--overlayBg);
+        border-radius: 18px;
+        padding: 0;
+        width: min(980px, 92vw);
+      }
+
+      .lightbox::backdrop {
+        background: var(--backdrop);
+      }
+
+      .lightboxTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .lightboxTitle {
+        font-weight: 850;
+        color: var(--text2);
+      }
+
+      .lightboxClose {
+        padding: 9px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border3);
+        background: var(--surface);
+        color: var(--text2);
+        cursor: pointer;
+      }
+
+      .lightboxClose:hover {
+        background: var(--surfaceHover);
+      }
+
+      .lightboxImg {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+      }
+
+      /* Image hover zoom */
+      .imgButton {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .imgButton .img {
+        transition: transform .3s ease;
+      }
+
+      .imgButton:hover .img {
+        transform: scale(1.05);
       }
     </style>
   </body>
