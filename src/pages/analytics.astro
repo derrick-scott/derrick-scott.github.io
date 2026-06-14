@@ -46,14 +46,14 @@ import "../styles/global.css";
           I'm actively transitioning into data analytics, building on a foundation in UX and technical writing.
           The same instincts that make documentation clear: understanding structure, anticipating the reader,
           and communicating findings precisely, translate directly into analytics work. This page will grow as
-          projects complete.
+          new projects complete.
         </p>
       </section>
 
       <!-- Certification track -->
       <section class="card sectionCard daSection" style="margin-top: 14px;">
         <div class="daLabelRow">
-          <div class="daLabel">In progress</div>
+          <div class="daLabel">Certified</div>
           <div class="daLabelNote">11-course IBM certification</div>
         </div>
         <h2 class="h2" style="margin: 0 0 8px;">IBM Data Analyst Professional Certificate</h2>
@@ -66,14 +66,15 @@ import "../styles/global.css";
         <div class="daCertRow">
           <div class="daCertBlock">
             <div class="daCertStatus">✓ Completed</div>
+            <div class="daCertName">IBM Data Analyst Professional Certificate</div>
+            <div class="daCertMeta">Verified · 2026 · Coursera / IBM</div>
+            <a class="button ghost" style="margin-top: 10px; display: inline-block;" href="https://coursera.org/share/7ff1b11bbe1327c2e8d815bbcdf52150" target="_blank" rel="noreferrer">View Certificate ↗</a>
+          </div>
+          <div class="daCertBlock">
+            <div class="daCertStatus">✓ Completed</div>
             <div class="daCertName">Data Analysis and Visualization Foundations Specialization</div>
             <div class="daCertMeta">Verified · April 2026 · Coursera / IBM</div>
             <a class="button ghost" style="margin-top: 10px; display: inline-block;" href="https://www.coursera.org/account/accomplishments/specialization/2APY6PKGTR08" target="_blank" rel="noreferrer">View Certificate ↗</a>
-          </div>
-          <div class="daCertBlock daCertPending">
-            <div class="daCertStatus">◌ In progress</div>
-            <div class="daCertName">IBM Data Analyst Professional Certificate</div>
-            <div class="daCertMeta">Full 11-course track · completing now</div>
           </div>
         </div>
 
@@ -110,24 +111,24 @@ import "../styles/global.css";
         </div>
       </section>
 
-      <!-- Projects in progress -->
+      <!-- Completed Projects -->
       <section class="card sectionCard daSection" style="margin-top: 14px;">
         <div class="daLabelRow">
-          <div class="daLabel">Projects</div>
-          <div class="daLabelNote">Completing as part of the IBM certification</div>
+          <div class="daLabel">Completed</div>
+          <div class="daLabelNote">Finished IBM certification projects</div>
         </div>
-        <h2 class="h2" style="margin: 0 0 8px;">Work in Progress</h2>
+        <h2 class="h2" style="margin: 0 0 8px;">Completed Projects</h2>
         <p class="muted" style="margin: 0 0 20px; max-width: 86ch; line-height: 1.6;">
-          These are the projects I'm currently working through. Each one will be documented here
-          with findings, code, and visualizations once complete.
+          Two finished projects from the IBM Data Analyst Professional Certificate, each expanded
+          well beyond the original course scope into standalone portfolio pieces.
         </p>
 
-        <!-- Project 1: Stock Dashboard -->
-        <div class="daProjectCard" id="stock-dashboard">
+        <!-- Project 1: Stock Analytics Pipeline -->
+        <div class="daProjectCard" id="stock-pipeline">
           <div class="daProjectLeft">
             <div class="daProjectBadge">IBM Certification Project</div>
-            <h3 class="daProjectTitle">Stock Analytics Dashboard</h3>
-            <p class="daProjectSub">Python · Plotly · Web Scraping · Financial Data</p>
+            <h3 class="daProjectTitle">End-to-End Stock Market Analytics Pipeline</h3>
+            <p class="daProjectSub">Python · yfinance · Pandas · Plotly · Web Scraping</p>
 
             <div class="block" style="margin-top: 14px;">
               <div class="label">Role</div>
@@ -140,83 +141,135 @@ import "../styles/global.css";
             <div class="block">
               <div class="label">Scope</div>
               <p class="text">
-                Extract historical stock prices and quarterly revenue data for Tesla, Amazon, AMD, and
-                GameStop using Python libraries and web scraping. Build an interactive Plotly dashboard
-                to surface patterns and trends for investment decision-making.
+                Started as an IBM guided notebook covering basic price and revenue charts for two stocks.
+                Rebuilt into a fully automated, config-driven pipeline: extract historical prices via
+                yfinance and quarterly revenue via web scraping, validate and structure the data, compute
+                five financial metrics, and generate nine interactive Plotly visualizations across five
+                tickers and an S&P 500 benchmark.
               </p>
             </div>
 
             <div class="block">
               <div class="label">Deliverable</div>
               <p class="text">
-                A structured dashboard with visualizations identifying key price and revenue trends across
-                all four stocks.
+                A modular notebook where changing the ticker list or date range in a single config
+                dictionary regenerates every chart, metric, and written insight automatically. Outputs
+                include nine standalone HTML dashboards, CSV exports, and an auto-generated insights file.
               </p>
             </div>
 
+            <div class="block">
+              <div class="label">Key findings</div>
+              <p class="text">
+                Tesla led total return at roughly +1,878% over the period, about 10x the S&P 500. Apple
+                posted the strongest risk-adjusted performance with a Sharpe Ratio of 1.01. GameStop's
+                correlation with the other stocks stayed near zero, reflecting retail-driven price action
+                disconnected from broader market trends.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Interactive: Normalized Performance</div>
+              <div class="chartFrame">
+                <iframe src="/charts/01_normalized_performance.html" title="Normalized stock performance vs S&P 500" loading="lazy"></iframe>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="label">Interactive: Correlation Heatmap</div>
+              <div class="chartFrame">
+                <iframe src="/charts/04_correlation_heatmap.html" title="Correlation heatmap of daily returns" loading="lazy"></iframe>
+              </div>
+            </div>
+
             <div class="daProjectStatus">
-              <div class="daStatusDot"></div>
-              <span>In progress</span>
+              <div class="daStatusDot daStatusDone"></div>
+              <span>Completed</span>
             </div>
           </div>
 
           <div class="daProjectRight">
             <div class="daStockGrid">
               <div class="daStockChip">TSLA</div>
-              <div class="daStockChip">AMZN</div>
-              <div class="daStockChip">AMD</div>
               <div class="daStockChip">GME</div>
+              <div class="daStockChip">AAPL</div>
+              <div class="daStockChip">MSFT</div>
+              <div class="daStockChip" style="grid-column: span 2;">^GSPC (Benchmark)</div>
             </div>
             <div class="daProjectMethods">
               <div class="daMethodHead">Methods used</div>
               <ul class="daMethodList">
-                <li>Python (requests, BeautifulSoup)</li>
-                <li>Historical price extraction</li>
-                <li>Revenue scraping</li>
-                <li>Plotly interactive charts</li>
-                <li>Dashboard layout & storytelling</li>
+                <li>yfinance price &amp; volume extraction</li>
+                <li>BeautifulSoup revenue scraping</li>
+                <li>5 financial metrics (Sharpe, CAGR, drawdown, etc.)</li>
+                <li>9 interactive Plotly dashboards</li>
+                <li>Automated insight generation</li>
+                <li>CSV / HTML export pipeline</li>
               </ul>
             </div>
+            <a class="button ghost" style="margin-top: 14px; display: inline-block; width: 100%; text-align: center;" href="https://github.com/derrickscottux-collab/stock-analytics-pipeline" target="_blank" rel="noreferrer">View on GitHub ↗</a>
           </div>
         </div>
 
         <div class="divider" style="margin: 20px 0;"></div>
 
-        <!-- Project 2: Capstone -->
-        <div class="daProjectCard" id="skills-capstone">
+        <!-- Project 2: Developer Ecosystem Capstone -->
+        <div class="daProjectCard" id="developer-ecosystem-capstone">
           <div class="daProjectLeft">
             <div class="daProjectBadge">IBM Capstone Project</div>
-            <h3 class="daProjectTitle">Global Developer Skills Analysis</h3>
-            <p class="daProjectSub">Python · SQL · IBM Cognos · Stack Overflow Survey · ETL</p>
+            <h3 class="daProjectTitle">Developer Ecosystem Analysis 2024</h3>
+            <p class="daProjectSub">Python · SQL · Excel · IBM Cognos · Stack Overflow Survey · ETL</p>
 
             <div class="block" style="margin-top: 14px;">
               <div class="label">Role</div>
               <p class="text">
-                Data analyst at a global IT and business consulting firm, contributing to an annual report
-                on in-demand technology skills.
+                Data analyst at a global IT and business consulting firm, producing a technology trend
+                report for hiring managers, technical leaders, and workforce planners.
               </p>
             </div>
 
             <div class="block">
               <div class="label">Scope</div>
               <p class="text">
-                Collect data from job postings, training portals, and the Stack Overflow Developer Survey.
-                Identify which programming languages, database technologies, and IDEs are most in demand.
-                Apply data wrangling and statistical analysis, then build a dashboard in IBM Cognos Analytics.
+                Combined three IBM capstone data collection methods, REST API job posting data, web-scraped
+                salary data, and the 2024 Stack Overflow Developer Survey, into a single end-to-end notebook.
+                Cleaned and validated all sources, then analyzed current versus future technology demand
+                across programming languages, databases, cloud platforms, and web frameworks.
               </p>
             </div>
 
             <div class="block">
               <div class="label">Deliverable</div>
               <p class="text">
-                A full analysis pipeline from raw data to a polished IBM Cognos dashboard, presented
-                as a stakeholder-facing report with data storytelling.
+                A consolidated analysis notebook, dashboard-ready CSV exports, a three-tab IBM Cognos
+                dashboard (current usage, future trends, demographics), and an executive-style presentation
+                with business recommendations.
               </p>
             </div>
 
+            <div class="block">
+              <div class="label">Key findings</div>
+              <p class="text">
+                TypeScript, PostgreSQL, and AWS rank highly in both current and desired usage, marking them
+                as baseline industry expectations. Go, Rust, FastAPI, Next.js, and Cloudflare show the
+                strongest future growth signals, while jQuery, PHP, Oracle, and Heroku show declining
+                future interest.
+              </p>
+            </div>
+
+            <div class="block">
+              <div class="label">Dashboard: Current Technology Usage</div>
+              <img class="img" src="/images/current_tech_usage.png" alt="IBM Cognos dashboard showing current technology usage across programming languages, databases, cloud platforms, and web frameworks" />
+            </div>
+
+            <div class="block">
+              <div class="label">Dashboard: Future Technology Trends</div>
+              <img class="img" src="/images/future_tech_trend.png" alt="IBM Cognos dashboard showing future desired technology adoption across programming languages, databases, cloud platforms, and web frameworks" />
+            </div>
+
             <div class="daProjectStatus">
-              <div class="daStatusDot"></div>
-              <span>In progress</span>
+              <div class="daStatusDot daStatusDone"></div>
+              <span>Completed</span>
             </div>
           </div>
 
@@ -224,20 +277,20 @@ import "../styles/global.css";
             <div class="daProjectMethods">
               <div class="daMethodHead">Data sources</div>
               <ul class="daMethodList">
-                <li>Stack Overflow Developer Survey</li>
-                <li>Job posting scraping</li>
-                <li>Training portal APIs</li>
-                <li>.csv, Excel, and database formats</li>
+                <li>Jobs API (employer demand)</li>
+                <li>Web-scraped salary data</li>
+                <li>2024 Stack Overflow Developer Survey</li>
               </ul>
             </div>
             <div class="daProjectMethods" style="margin-top: 14px;">
-              <div class="daMethodHead">Analysis questions</div>
+              <div class="daMethodHead">Dashboard tabs</div>
               <ul class="daMethodList">
-                <li>Most in-demand programming languages</li>
-                <li>Top database technologies</li>
-                <li>Most popular IDEs</li>
+                <li>Current technology usage</li>
+                <li>Future technology trends</li>
+                <li>Developer demographics</li>
               </ul>
             </div>
+            <a class="button ghost" style="margin-top: 14px; display: inline-block; width: 100%; text-align: center;" href="https://github.com/derrickscottux-collab/ibm-data-analyst-capstone" target="_blank" rel="noreferrer">View on GitHub ↗</a>
           </div>
         </div>
       </section>
@@ -510,6 +563,12 @@ import "../styles/global.css";
         animation: pulse 2s ease infinite;
       }
 
+      .daStatusDot.daStatusDone {
+        animation: none;
+        opacity: 1;
+        background: var(--accentText);
+      }
+
       @keyframes pulse {
         0%, 100% { opacity: 1; }
         50% { opacity: 0.45; }
@@ -559,6 +618,27 @@ import "../styles/global.css";
         color: var(--textSoft);
         font-size: 14px;
         line-height: 1.7;
+      }
+
+      /* Embedded interactive Plotly charts */
+      .chartFrame {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--surface2);
+      }
+
+      .chartFrame iframe {
+        display: block;
+        width: 100%;
+        height: 420px;
+        border: 0;
+      }
+
+      @media (max-width: 720px) {
+        .chartFrame iframe {
+          height: 320px;
+        }
       }
 
       /* Planned projects grid */
